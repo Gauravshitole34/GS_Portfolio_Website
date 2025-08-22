@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav.S.Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Gauravfolio</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-image">
+                <div class="profile-img">
+                    <div class="img-placeholder">
+                        <img src="/asset/Gimg.jpg" alt="Gaurav image" class="profile-picture">
+                    </div>
+                </div>
+            </div>
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Hi, I'm <span class="name-highlight">Gaurav Shitole</span></span>
+                    <span class="title-line typing-text">Full Stack Developer</span>
+                </h1>
+                <p class="hero-tagline">Passionate developer creating amazing web experiences</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn--primary">Contact Me</a>
+                    <a href="https://drive.google.com/file/d/1xaHFy9P53w7KINAqqDjY1L_8H0M0D3JX/view?usp=drive_link" class="btn btn--outline" id="download-resume" target="_blank">Download Resume</a>
+                </div>
+                <!-- <div class="social-links">
+                    <a href="https://github.com/gaurav" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/gaurav" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/gaurav" target="_blank" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com/gaurav" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div> -->
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know more about me</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I'm Gaurav, BCA Graduate and a dedicated full-stack developer with a passion for creating innovative web solutions. 
+                        With expertise in modern technologies and a keen eye for design. I bring ideas to life through 
+                        clean, efficient code and user-friendly interfaces.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h4>Clean Code</h4>
+                                <p>Writing maintainable and scalable code</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div>
+                                <h4>Responsive Design</h4>
+                                <p>Creating seamless user experiences</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-rocket"></i>
+                            <div>
+                                <h4>Performance</h4>
+                                <p>Optimizing for speed and efficiency</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-robot"></i>
+                            <div>
+                                <h4>Modern Layout</h4>
+                                <p>simulating a Modern project Layout</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1xaHFy9P53w7KINAqqDjY1L_8H0M0D3JX/view?usp=drive_link" class="btn btn--primary" id="about-resume" target="_blank">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="category-title">Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="95">
+                            <div class="skill-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Java</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95"></div>
+                                </div>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="90">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Python</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="88">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>JavaScript</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88"></div>
+                                </div>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>TypeScript</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>SQL</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Technologies/Frameworks</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="80">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Node.js</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="78">
+                            <div class="skill-icon">
+                                <i class="fas fa-truck-fast"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Express.js</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="78"></div>
+                                </div>
+                                <span class="skill-percent">78%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="75">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>MongoDB</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="90">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Html</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="70">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>CSS</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70"></div>
+                                </div>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="70">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>React.js</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70"></div>
+                                </div>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="90">
+                            <div class="skill-icon">
+                                <i class="fab fa-bootstrap"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Bootstrap</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Developer Tools</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="70">
+                            <div class="skill-icon">
+                                <i class="fab fa-docker"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Docker</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70"></div>
+                                </div>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="90">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>VS Code</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="88">
+                            <div class="skill-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>github</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88"></div>
+                                </div>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-icon">
+                                <i class="fas fa-arrow-up"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>SpringToolSuite</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-icon">
+                                <i class="fas fa-circle-notch"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Eclipse IDE</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+<section id="education" class="section education">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle">Academic background and qualifications</p>
+        </div>
+
+        <div class="education-timeline">
+            <!-- Education Item 1 -->
+            <div class="edu-item fade-in">
+                <div class="edu-dot"></div>
+                <div class="edu-card">
+                    <div class="edu-header">
+                        <div class="edu-badge">MCA</div>
+                        <h3 class="edu-degree">Master's In Computer Application</h3>
+                        <div class="edu-meta">
+                            <span class="edu-college"><i class="fas fa-university"></i> DIMR College, Pune</span>
+                            <span class="edu-duration"><i class="far fa-calendar-alt"></i> 2024 - Current</span>
+                        </div>
+                    </div>
+                    <div class="edu-body">
+                        <!-- <div class="edu-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">CGPA</span>
+                                <span class="stat-value">8.6/10</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Percentage</span>
+                                <span class="stat-value">86%</span>
+                            </div>
+                        </div> -->
+                        <p class="edu-description">
+                            Specialized in Software Engineering, Data Structures & Algorithms, and Web Technologies. 
+                            Active participant in coding competitions and technical events.
+                        </p>
+                        <div class="edu-subjects">
+                            <h4>Key Subjects</h4>
+                            <div class="subject-tags">
+                                <span class="subject-tag">Data Structures & Algorithms</span>
+                                <span class="subject-tag">Advanced DBMS</span>
+                                <span class="subject-tag">Java</span>
+                                <span class="subject-tag">Python</span>
+                                <span class="subject-tag">Advance Web Development</span>
+                                <span class="subject-tag">Software Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Item 2 -->
+            <div class="edu-item fade-in">
+                <div class="edu-dot"></div>
+                <div class="edu-card">
+                    <div class="edu-header">
+                        <div class="edu-badge">BCA</div>
+                        <h3 class="edu-degree">Bachelor Of Business Administration (Computer Application)</h3>
+                        <div class="edu-meta">
+                            <span class="edu-college"><i class="fas fa-school"></i> Mahatma Phule College, Pune</span>
+                            <span class="edu-duration"><i class="far fa-calendar-alt"></i> 2020 - 2023</span>
+                        </div>
+                    </div>
+                    <div class="edu-body">
+                        <div class="edu-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">CGPA</span>
+                                <span class="stat-value">8.49/10</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Percentage</span>
+                                <span class="stat-value">75.56%</span>
+                            </div>
+                        </div>
+                        <p class="edu-description">
+                            Specialization in Computer application.Active participant in coding competitions and technical events.
+                        </p>
+                        <div class="edu-subjects">
+                            <h4>Subjects</h4>
+                            <div class="subject-tags">
+                                <span class="subject-tag">BlockChain</span>
+                                <span class="subject-tag">Networking</span>
+                                <span class="subject-tag">Core Java</span>
+                                <span class="subject-tag">Operating System</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Item 3 -->
+             <div class="edu-item fade-in">
+                <div class="edu-dot"></div>
+                <div class="edu-card">
+                    <div class="edu-header">
+                        <div class="edu-badge">HSC</div>
+                        <h3 class="edu-degree">Higher Secondary Certificate (Commerce)</h3>
+                        <div class="edu-meta">
+                            <span class="edu-college"><i class="fas fa-school"></i> Dr.D Y Patil College, Pimpri, Pune</span>
+                            <span class="edu-duration"><i class="far fa-calendar-alt"></i> 2018 - 2020</span>
+                        </div>
+                    </div>
+                    <div class="edu-body">
+                        <div class="edu-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Percentage</span>
+                                <span class="stat-value">75%</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Board</span>
+                                <span class="stat-value">Maharashtra</span>
+                            </div>
+                        </div>
+                        <p class="edu-description">
+                            Commerce stream with focus on Accounting, IT and Economics. 
+                        </p>
+                        <div class="edu-subjects">
+                            <h4>Subjects</h4>
+                            <div class="subject-tags">
+                                <span class="subject-tag">English</span>
+                                <span class="subject-tag">Accounting</span>
+                                <span class="subject-tag">Economics</span>
+                                <span class="subject-tag">Information Technology</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Aug 2025 - Present</div>
+                        <h3>Front-End Web Development Intern</h3>
+                        <h4>Edunet Foundation – IBM SkillsBuild, AICTE</h4>
+                        <p>Developed responsive web pages and worked on real-world front-end projects under mentor guidance.
+                           Completed curated SkillBuild courses & industry-led masterclasses to strengthen technical expertise.
+                           Built and showcased industry-relevant skills in modern front-end technologies.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">html</span>
+                            <span class="tech-tag">css</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">Github</span>
+                        </div>
+                        <!-- <div class="achievements">
+                            <h5>Key Achievements:</h5>
+                            <ul>
+                                <li>Improved application performance by 40%</li>
+                                <li>Led a team of 5 developers</li>
+                                <li>Delivered 3 major projects on time</li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jun 2021 - Dec 2022</div>
+                        <h3>Full Stack Developer</h3>
+                        <h4>Digital Innovations Inc.</h4>
+                        <p>Developed and maintained e-commerce platforms and customer management systems. Collaborated with design teams to implement pixel-perfect interfaces.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Redis</span>
+                        </div>
+                        <div class="achievements">
+                            <h5>Key Achievements:</h5>
+                            <ul>
+                                <li>Increased user engagement by 25%</li>
+                                <li>Reduced page load time by 60%</li>
+                                <li>Integrated 5+ payment gateways</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Aug 2025 - Present</div>
+                        <h3>Web Development Intern</h3>
+                        <h4>Tamizhan Skills</h4>
+                        <p>Developed responsive websites and web applications. Worked under mentor guide to learn best practices and modern development workflows.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                        </div>
+                        <div class="achievements">
+                            <h5>Key Achievements:</h5>
+                            <ul>
+                                <li>Built 7+ responsive websites</li>
+                                <li>Improved code quality through peer reviews</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/asset/GStartupImg.jpg" alt="Projecr img" class="project-img">
+                        <!-- <div class="img-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div> -->
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Startup Landing Page</h3>
+                        <p class="project-description"> Design and build a modern landing page for a fictional startup. Focus on clean UI, strong call-to-actions,and mobile responsiveness.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Vite</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/Gauravshitole34/Startup-landing-page" class="btn btn--outline">Source</a>
+                            <a href="https://startup-landing-page-reqozohsx-gaurav-shitoles-projects.vercel.app" class="btn btn--primary">Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/asset/GSReBuilder.jpg" alt="Projecr img" class="project-img">
+                        <!-- <div class="img-placeholder">
+                            <i class="fas fa-tasks"></i>
+                        </div> -->
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Digital Resume Builder</h3>
+                        <p class="project-description">A resume generator web app where users fill out a formand get a professional-looking resume that can be downloaded as a PDF.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/Gauravshitole34/Digital_Resume_Builder" class="btn btn--outline">Source</a>
+                            <a href="https://digital-resume-builder-4qk157gr8-gaurav-shitoles-projects.vercel.app" class="btn btn--primary">Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/asset/GauravFlow.jpg" alt="Projecr img" class="project-img">
+                        <!-- <div class="img-placeholder">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div> -->
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">To-Do List Web App</h3>
+                        <p class="project-description">A to-do list application that allows users to manage their tasks with the ability to mark them as complete, edit them, and delete when done.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Html</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/Gauravshitole34/To-Do-List-Web-App" class="btn btn--outline">Source</a>
+                            <a href="https://gauravshitole34.github.io/To-Do-List-Web-App/" class="btn btn--primary">Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-subtitle">Professional achievements and learning</p>
+            </div>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <div class="img-placeholder">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Agile Project Management</h3>
+                        <p class="cert-issuer">HP</p>
+                        <p class="cert-date">Feb 2025</p>
+                        <a href="https://drive.google.com/file/d/15RW9-ZPV2tGXeqGc9EsIHID7AvB4BH0H/view?usp=drive_link" target="_blank" class="btn btn--primary cert-view-btn">View</a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <div class="img-placeholder">
+                            <i class="fab fa-java"></i>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Diploma In Full Stack Java Development</h3>
+                        <p class="cert-issuer">Teknowell EduTech</p>
+                        <p class="cert-date">July 2023</p>
+                        <a href="https://drive.google.com/file/d/1F8k8B1s79CvAPLpxe4YZL5DLVuauOKUS/view?usp=drive_link" target="_blank" class="btn btn--primary cert-view-btn">View</a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <div class="img-placeholder">
+                            <i class="fab fa-bootstrap"></i>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Bootstrap 4 Tutorial</h3>
+                        <p class="cert-issuer">Coursera With W3School</p>
+                        <p class="cert-date">July 2025</p>
+                        <a href="https://drive.google.com/file/d/1xbwizqtv9-J-VydwiVD_CGSsGKV3we2h/view?usp=drive_link" target="_blank" class="btn btn--primary cert-view-btn">View</a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <div class="img-placeholder">
+                            <i class="fab fa-docker"></i>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Docker For Beginner</h3>
+                        <p class="cert-issuer">KodeKloud</p>
+                        <p class="cert-date">Feb 2025</p>
+                        <a href="https://drive.google.com/file/d/1SDkpJc-V-6AN_KHHS4doyPJfXckoGBa8/view?usp=drive_link" target="_blank" class="btn btn--primary cert-view-btn">View</a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <div class="img-placeholder">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Fundamental AI Concept</h3>
+                        <p class="cert-issuer">Microsoft</p>
+                        <p class="cert-date">Nov 2024</p>
+                        <a href="https://drive.google.com/file/d/11upz7Ld7NtG4mhFDwYU3nPTF1UZqA6mY/view?usp=drive_link" target="_blank" class="btn btn--primary cert-view-btn">View</a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <div class="img-placeholder">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">AI For Beginner</h3>
+                        <p class="cert-issuer">HP</p>
+                        <p class="cert-date">Feb 2025</p>
+                        <a href="https://drive.google.com/file/d/1tqDBdL1TQ5Xs2LhFrtT9PA0Oh-sz6b8b/view?usp=drive_link" target="_blank" class="btn btn--primary cert-view-btn">View</a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <div class="img-placeholder">
+                            <i class="fas fa-database"></i>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title"> Introduction to Data Science</h3>
+                        <p class="cert-issuer">Infosys</p>
+                        <p class="cert-date">July 2025</p>
+                        <a href="https://drive.google.com/file/d/1wKprYXXcfmL1RBz4ohhu4j8s_O8c9q-Q/view?usp=drive_link" target="_blank" class="btn btn--primary cert-view-btn">View</a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <div class="img-placeholder">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Azure Fundamental</h3>
+                        <p class="cert-issuer">Microsoft</p>
+                        <p class="cert-date">Sep 2024</p>
+                        <a href="https://drive.google.com/file/d/1ij1dET5LxhyF5wwk9tSXHch_5odpppOb/view?usp=drive_link" target="_blank" class="btn btn--primary cert-view-btn">View</a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <div class="img-placeholder">
+                            <i class="fab fa-edge"></i>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Career Edge - Young Professional</h3>
+                        <p class="cert-issuer">TCS</p>
+                        <p class="cert-date">Jan 2025</p>
+                        <a href="https://drive.google.com/file/d/1tYUb4ghkkp8_UWXVgmrm3o3PMAGnh1RS/view?usp=drive_link" target="_blank" class="btn btn--primary cert-view-btn">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together on your next project</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>shitolegaurav34@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 96046 82938</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Pune,Maharashtra,India</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h4>Follow Me</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/Gauravshitole34" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/gauravshitole3808" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.instagram.com/gaurav_shitole_96k?igsh=cDUyZTRsdHJhZjVq" target="_blank" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn btn btn--primary btn--full-width">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Gaurav Shitole. All rights reserved.</p>
+                </div>
+                <!-- <div class="footer-social">
+                    <a href="https://github.com/gaurav" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/gaurav" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/gaurav" target="_blank" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div> -->
+            </div>
+        </div>
+        <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
