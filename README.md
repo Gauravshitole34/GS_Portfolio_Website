@@ -20,7 +20,7 @@
 
 - Link social media profiles
 
-- Deploy on GitHub Pages or Netlify
+- Deploy on Vercel
 
 ***
 
