@@ -15,6 +15,9 @@ const EMAILJS_CONFIG = {
 
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize theme first
+    initThemeToggle();
+
     // Initialize EmailJS
     emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY);
     
@@ -675,5 +678,44 @@ function initEducationAnimations() {
     eduItems.forEach(item => {
         eduObserver.observe(item);
     });
+}
+
+// Theme Toggle Functionality
+function initThemeToggle() {
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    if (!themeToggleBtn) return;
+    
+    const icon = themeToggleBtn.querySelector('i');
+    
+    // Check saved theme or system preference
+    const savedTheme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    // Default theme is dark
+    let currentTheme = 'dark';
+    if (savedTheme) {
+        currentTheme = savedTheme;
+    } else if (!systemPrefersDark) {
+        currentTheme = 'light';
+    }
+    
+    // Apply theme on load
+    applyTheme(currentTheme);
+    
+    themeToggleBtn.addEventListener('click', function() {
+        const targetTheme = document.documentElement.getAttribute('data-color-scheme') === 'light' ? 'dark' : 'light';
+        applyTheme(targetTheme);
+    });
+    
+    function applyTheme(theme) {
+        document.documentElement.setAttribute('data-color-scheme', theme);
+        localStorage.setItem('theme', theme);
+        
+        if (theme === 'light') {
+            icon.className = 'fas fa-sun';
+        } else {
+            icon.className = 'fas fa-moon';
+        }
+    }
 }
 

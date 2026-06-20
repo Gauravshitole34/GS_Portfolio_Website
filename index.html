@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaurav.S.Portfolio</title>
+    <title>Gaurav Shitole | Full-Stack Developer</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- EmailJS SDK -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
@@ -26,10 +29,15 @@
                 <a href="#certifications" class="nav-link">Certifications</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </div>
     </nav>
@@ -49,10 +57,10 @@
                     <span class="title-line">Hi, I'm <span class="name-highlight">Gaurav Shitole</span></span>
                     <span class="title-line typing-text">Full Stack Developer</span>
                 </h1>
-                <p class="hero-tagline">Passionate developer creating amazing web experiences</p>
+                <p class="hero-tagline">Passionate Full-Stack Developer experienced in building scalable, production-ready web applications</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn--primary">Contact Me</a>
-                    <a href="https://drive.google.com/file/d/1_NVyh--E1dpizBvo6jrhX6ZxWCCEBnPL/view?usp=drive_link" class="btn btn--outline" id="download-resume" target="_blank">Download Resume</a>
+                    <a href="asset/Gaurav_Shitole_Resume.pdf" class="btn btn--outline" id="download-resume" target="_blank">Download Resume</a>
                 </div>
                 <!-- <div class="social-links">
                     <a href="https://github.com/gaurav" target="_blank" class="social-link">
@@ -87,9 +95,7 @@
             <div class="about-content">
                 <div class="about-text">
                     <p class="about-description">
-                        I'm Gaurav, BCA Graduate and a dedicated full-stack developer with a passion for creating innovative web solutions. 
-                        With expertise in modern technologies and a keen eye for design. I bring ideas to life through 
-                        clean, efficient code and user-friendly interfaces.
+                        I'm Gaurav Shitole, a dedicated Full-Stack Developer experienced in building scalable, high-performance web applications. Specializing in React.js, Java Spring Boot, Node.js, and MySQL, I focus on REST APIs, role-based access control (RBAC), real-time systems, and AI integration to deliver robust, production-ready solutions.
                     </p>
                     <div class="about-highlights">
                         <div class="highlight-item">
@@ -100,28 +106,28 @@
                             </div>
                         </div>
                         <div class="highlight-item">
-                            <i class="fas fa-mobile-alt"></i>
+                            <i class="fas fa-shield-alt"></i>
                             <div>
-                                <h4>Responsive Design</h4>
-                                <p>Creating seamless user experiences</p>
+                                <h4>RBAC & Security</h4>
+                                <p>Implementing secure APIs and role permissions</p>
                             </div>
                         </div>
                         <div class="highlight-item">
-                            <i class="fas fa-rocket"></i>
+                            <i class="fas fa-bolt"></i>
                             <div>
-                                <h4>Performance</h4>
-                                <p>Optimizing for speed and efficiency</p>
+                                <h4>Real-Time Systems</h4>
+                                <p>Integrating WebSockets and live tracking</p>
                             </div>
                         </div>
                         <div class="highlight-item">
-                            <i class="fas fa-robot"></i>
+                            <i class="fas fa-brain"></i>
                             <div>
-                                <h4>Modern Layout</h4>
-                                <p>simulating a Modern project Layout</p>
+                                <h4>AI Integration</h4>
+                                <p>Building smart routing and LLM services</p>
                             </div>
                         </div>
                     </div>
-                    <a href="https://drive.google.com/file/d/16pk2jsA0JCG82dEoLhNGripBNyJoTJLo/view?usp=drive_link" class="btn btn--primary" id="about-resume" target="_blank">Download Resume</a>
+                    <a href="asset/Gaurav_Shitole_Resume.pdf" class="btn btn--primary" id="about-resume" target="_blank">Download Resume</a>
                 </div>
             </div>
         </div>
@@ -136,7 +142,7 @@
             </div>
             <div class="skills-container">
                 <div class="skill-category">
-                    <h3 class="category-title">Languages</h3>
+                    <h3 class="category-title">Frontend & Languages</h3>
                     <div class="skills-grid">
                         <div class="skill-item" data-skill="95">
                             <div class="skill-icon">
@@ -152,127 +158,38 @@
                         </div>
                         <div class="skill-item" data-skill="90">
                             <div class="skill-icon">
-                                <i class="fab fa-python"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>Python</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="90"></div>
-                                </div>
-                                <span class="skill-percent">90%</span>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-skill="88">
-                            <div class="skill-icon">
                                 <i class="fab fa-js-square"></i>
                             </div>
                             <div class="skill-info">
                                 <h4>JavaScript</h4>
                                 <div class="skill-bar">
-                                    <div class="skill-progress" data-width="88"></div>
-                                </div>
-                                <span class="skill-percent">88%</span>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-skill="85">
-                            <div class="skill-icon">
-                                <i class="fab fa-js"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>TypeScript</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="85"></div>
-                                </div>
-                                <span class="skill-percent">85%</span>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-skill="85">
-                            <div class="skill-icon">
-                                <i class="fas fa-database"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>SQL</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="85"></div>
-                                </div>
-                                <span class="skill-percent">85%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="category-title">Technologies/Frameworks</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item" data-skill="80">
-                            <div class="skill-icon">
-                                <i class="fab fa-node-js"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>Node.js</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="80"></div>
-                                </div>
-                                <span class="skill-percent">80%</span>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-skill="78">
-                            <div class="skill-icon">
-                                <i class="fas fa-truck-fast"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>Express.js</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="78"></div>
-                                </div>
-                                <span class="skill-percent">78%</span>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-skill="75">
-                            <div class="skill-icon">
-                                <i class="fas fa-database"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>MongoDB</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="75"></div>
-                                </div>
-                                <span class="skill-percent">75%</span>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-skill="90">
-                            <div class="skill-icon">
-                                <i class="fab fa-html5"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>Html</h4>
-                                <div class="skill-bar">
                                     <div class="skill-progress" data-width="90"></div>
                                 </div>
                                 <span class="skill-percent">90%</span>
                             </div>
                         </div>
-                        <div class="skill-item" data-skill="70">
-                            <div class="skill-icon">
-                                <i class="fab fa-css3"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>CSS</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="70"></div>
-                                </div>
-                                <span class="skill-percent">70%</span>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-skill="70">
+                        <div class="skill-item" data-skill="90">
                             <div class="skill-icon">
                                 <i class="fab fa-react"></i>
                             </div>
                             <div class="skill-info">
                                 <h4>React.js</h4>
                                 <div class="skill-bar">
-                                    <div class="skill-progress" data-width="70"></div>
+                                    <div class="skill-progress" data-width="90"></div>
                                 </div>
-                                <span class="skill-percent">70%</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="95">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>HTML5 & CSS3</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95"></div>
+                                </div>
+                                <span class="skill-percent">95%</span>
                             </div>
                         </div>
                         <div class="skill-item" data-skill="90">
@@ -290,38 +207,14 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3 class="category-title">Developer Tools</h3>
+                    <h3 class="category-title">Backend & Databases</h3>
                     <div class="skills-grid">
-                        <div class="skill-item" data-skill="70">
-                            <div class="skill-icon">
-                                <i class="fab fa-docker"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>Docker</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="70"></div>
-                                </div>
-                                <span class="skill-percent">70%</span>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-skill="90">
-                            <div class="skill-icon">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>VS Code</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="90"></div>
-                                </div>
-                                <span class="skill-percent">90%</span>
-                            </div>
-                        </div>
                         <div class="skill-item" data-skill="88">
                             <div class="skill-icon">
-                                <i class="fab fa-github"></i>
+                                <i class="fas fa-leaf"></i>
                             </div>
                             <div class="skill-info">
-                                <h4>github</h4>
+                                <h4>Spring Boot</h4>
                                 <div class="skill-bar">
                                     <div class="skill-progress" data-width="88"></div>
                                 </div>
@@ -330,10 +223,10 @@
                         </div>
                         <div class="skill-item" data-skill="85">
                             <div class="skill-icon">
-                                <i class="fas fa-arrow-up"></i>
+                                <i class="fab fa-node-js"></i>
                             </div>
                             <div class="skill-info">
-                                <h4>SpringToolSuite</h4>
+                                <h4>Node.js & Express</h4>
                                 <div class="skill-bar">
                                     <div class="skill-progress" data-width="85"></div>
                                 </div>
@@ -342,14 +235,103 @@
                         </div>
                         <div class="skill-item" data-skill="85">
                             <div class="skill-icon">
-                                <i class="fas fa-circle-notch"></i>
+                                <i class="fas fa-database"></i>
                             </div>
                             <div class="skill-info">
-                                <h4>Eclipse IDE</h4>
+                                <h4>SQL & MySQL</h4>
                                 <div class="skill-bar">
                                     <div class="skill-progress" data-width="85"></div>
                                 </div>
                                 <span class="skill-percent">85%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="82">
+                            <div class="skill-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>REST APIs & JWT</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="82"></div>
+                                </div>
+                                <span class="skill-percent">82%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <div class="skill-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>WebSockets (STOMP/SockJS)</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Tools & Libraries</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="90">
+                            <div class="skill-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Git & GitHub</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="90">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>VS Code & IDEs</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="75">
+                            <div class="skill-icon">
+                                <i class="fab fa-docker"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Docker</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <div class="skill-icon">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Leaflet Maps API</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <div class="skill-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Maven & Build Tools</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                                <span class="skill-percent">80%</span>
                             </div>
                         </div>
                     </div>
@@ -373,35 +355,34 @@
                 <div class="edu-card">
                     <div class="edu-header">
                         <div class="edu-badge">MCA</div>
-                        <h3 class="edu-degree">Master's In Computer Application</h3>
+                        <h3 class="edu-degree">Master of Computer Applications</h3>
                         <div class="edu-meta">
-                            <span class="edu-college"><i class="fas fa-university"></i> DIMR College, Pune</span>
-                            <span class="edu-duration"><i class="far fa-calendar-alt"></i> 2024 - Current</span>
+                            <span class="edu-college"><i class="fas fa-university"></i> DIMR, Dnyansagar Institute of Management and Research</span>
+                            <span class="edu-duration"><i class="far fa-calendar-alt"></i> 2024 - 2026</span>
                         </div>
                     </div>
                     <div class="edu-body">
-                        <!-- <div class="edu-stats">
+                        <div class="edu-stats">
                             <div class="stat-item">
-                                <span class="stat-label">CGPA</span>
-                                <span class="stat-value">8.6/10</span>
+                                <span class="stat-label">Status</span>
+                                <span class="stat-value">Pursuing</span>
                             </div>
                             <div class="stat-item">
-                                <span class="stat-label">Percentage</span>
-                                <span class="stat-value">86%</span>
+                                <span class="stat-label">Location</span>
+                                <span class="stat-value">Pune</span>
                             </div>
-                        </div> -->
+                        </div>
                         <p class="edu-description">
-                            Specialized in Software Engineering, Data Structures & Algorithms, and Web Technologies. 
-                            Active participant in coding competitions and technical events.
+                            Specializing in Software Engineering, Data Structures & Algorithms, Java, and Advanced Web Technologies. Focus on building production-ready applications and software architecture design.
                         </p>
                         <div class="edu-subjects">
                             <h4>Key Subjects</h4>
                             <div class="subject-tags">
                                 <span class="subject-tag">Data Structures & Algorithms</span>
                                 <span class="subject-tag">Advanced DBMS</span>
-                                <span class="subject-tag">Java</span>
-                                <span class="subject-tag">Python</span>
-                                <span class="subject-tag">Advance Web Development</span>
+                                <span class="subject-tag">Java Spring Boot</span>
+                                <span class="subject-tag">Python & AI Concepts</span>
+                                <span class="subject-tag">Advanced Web Development</span>
                                 <span class="subject-tag">Software Engineering</span>
                             </div>
                         </div>
@@ -414,10 +395,10 @@
                 <div class="edu-dot"></div>
                 <div class="edu-card">
                     <div class="edu-header">
-                        <div class="edu-badge">BCA</div>
-                        <h3 class="edu-degree">Bachelor Of Business Administration (Computer Application)</h3>
+                        <div class="edu-badge">BBA (CA)</div>
+                        <h3 class="edu-degree">BBA (Computer Applications)</h3>
                         <div class="edu-meta">
-                            <span class="edu-college"><i class="fas fa-school"></i> Mahatma Phule College, Pune</span>
+                            <span class="edu-college"><i class="fas fa-university"></i> Savitribai Phule Pune University</span>
                             <span class="edu-duration"><i class="far fa-calendar-alt"></i> 2020 - 2023</span>
                         </div>
                     </div>
@@ -425,68 +406,30 @@
                         <div class="edu-stats">
                             <div class="stat-item">
                                 <span class="stat-label">CGPA</span>
-                                <span class="stat-value">8.49/10</span>
+                                <span class="stat-value">8.5 / 10</span>
                             </div>
                             <div class="stat-item">
-                                <span class="stat-label">Percentage</span>
-                                <span class="stat-value">75.56%</span>
+                                <span class="stat-label">Location</span>
+                                <span class="stat-value">Pune</span>
                             </div>
                         </div>
                         <p class="edu-description">
-                            Specialization in Computer application.Active participant in coding competitions and technical events.
+                            Completed undergraduate degree in Computer Applications with a focus on databases, object-oriented systems, networking, and core software programming concepts.
                         </p>
                         <div class="edu-subjects">
-                            <h4>Subjects</h4>
+                            <h4>Key Subjects</h4>
                             <div class="subject-tags">
-                                <span class="subject-tag">BlockChain</span>
-                                <span class="subject-tag">Networking</span>
                                 <span class="subject-tag">Core Java</span>
-                                <span class="subject-tag">Operating System</span>
+                                <span class="subject-tag">Database Management</span>
+                                <span class="subject-tag">Web Technologies</span>
+                                <span class="subject-tag">Operating Systems</span>
+                                <span class="subject-tag">Blockchain</span>
+                                <span class="subject-tag">Networking</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Education Item 3 -->
-             <div class="edu-item fade-in">
-                <div class="edu-dot"></div>
-                <div class="edu-card">
-                    <div class="edu-header">
-                        <div class="edu-badge">HSC</div>
-                        <h3 class="edu-degree">Higher Secondary Certificate (Commerce)</h3>
-                        <div class="edu-meta">
-                            <span class="edu-college"><i class="fas fa-school"></i> Dr.D Y Patil College, Pimpri, Pune</span>
-                            <span class="edu-duration"><i class="far fa-calendar-alt"></i> 2018 - 2020</span>
-                        </div>
-                    </div>
-                    <div class="edu-body">
-                        <div class="edu-stats">
-                            <div class="stat-item">
-                                <span class="stat-label">Percentage</span>
-                                <span class="stat-value">75%</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-label">Board</span>
-                                <span class="stat-value">Maharashtra</span>
-                            </div>
-                        </div>
-                        <p class="edu-description">
-                            Commerce stream with focus on Accounting, IT and Economics. 
-                        </p>
-                        <div class="edu-subjects">
-                            <h4>Subjects</h4>
-                            <div class="subject-tags">
-                                <span class="subject-tag">English</span>
-                                <span class="subject-tag">Accounting</span>
-                                <span class="subject-tag">Economics</span>
-                                <span class="subject-tag">Information Technology</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
         </div>
     </div>
 </section>
@@ -500,71 +443,26 @@
                 <p class="section-subtitle">My professional journey</p>
             </div>
             <div class="timeline">
-                <!--<div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">Aug 2025 - Present</div>
-                        <h3>Front-End Web Development Intern</h3>
-                        <h4>Edunet Foundation – IBM SkillsBuild, AICTE</h4>
-                        <p>Developed responsive web pages and worked on real-world front-end projects under mentor guidance.
-                           Completed curated SkillBuild courses & industry-led masterclasses to strengthen technical expertise.
-                           Built and showcased industry-relevant skills in modern front-end technologies.</p>
-                        <div class="tech-tags">
-                            <span class="tech-tag">html</span>
-                            <span class="tech-tag">css</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Bootstrap</span>
-                            <span class="tech-tag">Github</span>
-                        </div>
-                         <div class="achievements">
-                            <h5>Key Achievements:</h5>
-                            <ul>
-                                <li>Improved application performance by 40%</li>
-                                <li>Led a team of 5 developers</li>
-                                <li>Delivered 3 major projects on time</li>
-                            </ul>
-                        </div> 
-                    </div>
-                </div> -->
-                <!-- <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">Jun 2021 - Dec 2022</div>
-                        <h3>Full Stack Developer</h3>
-                        <h4>Digital Innovations Inc.</h4>
-                        <p>Developed and maintained e-commerce platforms and customer management systems. Collaborated with design teams to implement pixel-perfect interfaces.</p>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">Express.js</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">Redis</span>
-                        </div>
-                        <div class="achievements">
-                            <h5>Key Achievements:</h5>
-                            <ul>
-                                <li>Increased user engagement by 25%</li>
-                                <li>Reduced page load time by 60%</li>
-                                <li>Integrated 5+ payment gateways</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> -->
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <div class="timeline-date">Aug 2025 - Present</div>
-                        <h3>Web Development Intern</h3>
-                        <h4>Tamizhan Skills</h4>
-                        <p>Developed responsive websites and web applications. Worked under mentor guide to learn best practices and modern development workflows.</p>
+                        <div class="timeline-date">Jan 2026 - Present</div>
+                        <h3>Intern – Software Development</h3>
+                        <h4>SETTribe LLP – Pune, Maharashtra (On-site)</h4>
+                        <p>Developed scalable web applications and backend systems from SRS layout to full deployment, optimizing database and API structures.</p>
                         <div class="tech-tags">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
                             <span class="tech-tag">React.js</span>
-                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Java Spring Boot</span>
+                            <span class="tech-tag">REST APIs</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">RBAC</span>
+                            <span class="tech-tag">WebSockets</span>
                         </div>
                         <div class="achievements">
-                            <h5>Key Achievements:</h5>
+                            <h5>Key Accomplishments:</h5>
                             <ul>
-                                <li>Built 7+ responsive websites</li>
-                                <li>Improved code quality through peer reviews</li>
+                                <li>Developed 3 full-stack web applications (meeting planner, temple trust management, hair salon booking) using React.js, Java Spring Boot, REST APIs, and MySQL from SRS to deployment.</li>
+                                <li>Implemented RBAC for 6+ user roles with session management and protected routing; integrated QR payment gateway, barcode generation, WhatsApp/SMS alerts, and Excel/PDF export — boosting efficiency by ~40%.</li>
+                                <li>Built 15+ CRUD modules with real-time DataTables, auto GST calculation, multilingual UI (English + Marathi), and reusable React components — reducing redundant code by ~30%.</li>
                             </ul>
                         </div>
                     </div>
@@ -583,65 +481,43 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="/asset/GStartupImg.jpg" alt="Projecr img" class="project-img">
-                        <!-- <div class="img-placeholder">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div> -->
+                        <img src="asset/smart_resume.png" alt="SmartResume Screenshot" class="project-img">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Startup Landing Page</h3>
-                        <p class="project-description"> Design and build a modern landing page for a fictional startup. Focus on clean UI, strong call-to-actions,and mobile responsiveness.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">TypeScript</span>
-                            <span class="tech-tag">Tailwind CSS</span>
-                            <span class="tech-tag">Vite</span>
-                        </div>
-                        <div class="project-buttons">
-                            <a href="https://github.com/Gauravshitole34/Startup-landing-page" class="btn btn--outline">Source</a>
-                            <a href="https://startup-landing-page-gamma.vercel.app/" class="btn btn--primary">Live</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="/asset/GSReBuilder.jpg" alt="Projecr img" class="project-img">
-                        <!-- <div class="img-placeholder">
-                            <i class="fas fa-tasks"></i>
-                        </div> -->
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Digital Resume Builder</h3>
-                        <p class="project-description">A resume generator web app where users fill out a formand get a professional-looking resume that can be downloaded as a PDF.</p>
+                        <h3 class="project-title">SmartResume</h3>
+                        <p class="project-description">AI-Optimized Resume Builder & Job-Hunting Suite. Architected a secure server-side AI routing bridge for real-time ATS score matching, keyword gap analysis, and AI cover letters. Engineered a 1-second debounced state sync reducing DB traffic by 85%, and implemented a drag-and-drop Kanban job tracker.</p>
                         <div class="project-tech">
                             <span class="tech-tag">React.js</span>
-                            <span class="tech-tag">TypeScript</span>
-                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Zustand</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Groq LLM</span>
                         </div>
                         <div class="project-buttons">
-                            <a href="https://github.com/Gauravshitole34/Digital_Resume_Builder" class="btn btn--outline">Source</a>
-                            <a href="https://digital-resume-builder-five.vercel.app/" class="btn btn--primary">Live</a>
+                            <a href="https://github.com/Gauravshitole34/SmartResumeMaker_FullStack_Website" target="_blank" class="btn btn--outline">Source</a>
+                            <a href="#project-smartresume" target="_blank" class="btn btn--primary">Live</a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="/asset/GauravFlow.jpg" alt="Projecr img" class="project-img">
-                        <!-- <div class="img-placeholder">
-                            <i class="fas fa-cloud-sun"></i>
-                        </div> -->
+                        <img src="asset/ride_fusion.png" alt="RideFusion Screenshot" class="project-img">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">To-Do List Web App</h3>
-                        <p class="project-description">A to-do list application that allows users to manage their tasks with the ability to mark them as complete, edit them, and delete when done.</p>
+                        <h3 class="project-title">RideFusion</h3>
+                        <p class="project-description">Peer-to-Peer Car Rental & Ride-Sharing Platform. Built role-based dashboards for 4 user types using Spring Boot REST APIs and JPA. Integrated real-time WebSockets chat and live vehicle tracking on Leaflet GIS maps, along with an admin listing review pipeline and support ticketing system.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Html</span>
-                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">React 19</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">Hibernate</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">WebSocket</span>
+                            <span class="tech-tag">Leaflet Maps</span>
                         </div>
                         <div class="project-buttons">
-                            <a href="https://github.com/Gauravshitole34/To-Do-List-Web-App" class="btn btn--outline">Source</a>
-                            <a href="https://gauravshitole34.github.io/To-Do-List-Web-App/" class="btn btn--primary">Live</a>
+                            <a href="https://github.com/Gauravshitole34/RideFusion_Full_Stack_Website" target="_blank" class="btn btn--outline">Source</a>
+                            <a href="#project-ridefusion" target="_blank" class="btn btn--primary">Live</a>
                         </div>
                     </div>
                 </div>
